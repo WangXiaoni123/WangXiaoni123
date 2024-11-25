@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+ <title>张天琦生日快乐！</title>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>生日快乐！</title>
+  <title>天琦小朋友生日快乐呀！</title>
   <link rel="shortcut icon" href="birthday-cake.ico" />
   <style>
     body {
@@ -66,7 +67,7 @@
   </style>
 </head>
 <body>
-  <h1>生日快乐，亲爱的朋友！</h1>
+  <h1>生日快乐，我宇宙无敌优秀的漂亮的可爱的善良的聪慧的张天琦闺女！</h1>
 
   <p>今天是你特别的一天，我希望这一天充满快乐与惊喜！</p>
   
@@ -78,7 +79,7 @@
 
   <p class="birthday-message">愿你的生活像这美丽的蛋糕一样甜蜜，愿你所有的梦想都能成真！</p>
 
-  <button class="button" onclick="alert('生日快乐！祝你拥有美好的一年！')">点我祝福你！</button>
+  <button class="button" onclick="alert('生日快乐！祝你拥有美好的人生！')">点我祝福你！</button>
 
   <!-- 背景音乐 -->
   <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=2599600518&auto=1&height=66"></iframe>
