@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>虚拟时间旅行：未来的探索</title>
+    <link rel="shortcut icon" href="time-travel-icon.ico" />
+    <style>
+        /* 页面基础样式 */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('space-background.jpg'); /* 设置背景图片 */
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 40px;
+            background-attachment: fixed;
+            background-position: center;
+            animation: fade-in-background 3s ease-out; /* 背景渐变效果 */
+        }
+
+        /* 标题渐变动画 */
+        @keyframes gradient-text {
+            0% { color: #00bcd4; }
+            50% { color: #ff4081; }
+            100% { color: #00bcd4; }
+        }
+
+        /* 背景渐变动画 */
+        @keyframes fade-in-background {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* 主标题样式 */
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            animation: gradient-text 3s infinite; /* 渐变动画 */
+        }
+
+        /* 副标题和段落动画 */
+        h2, h3 {
+            color: #4caf50;
+            animation: fade-in 2s ease-in-out;
+        }
+
+        p {
+            font-size: 22px;
+            color: #ffffff;
+            line-height: 1.8;
+            animation: slide-in 2s ease-out;
+        }
+
+        /* 图片样式 */
+        img.time-travel-image {
+            width: 60%;
+            height: auto;
+            margin-top: 30px;
+            border-radius: 10px;
+            animation: slide-in 2s ease-out;
+        }
+
+        /* 动画效果 - 图片滑入 */
+        @keyframes slide-in {
+            0% { transform: translateX(-100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        /* 按钮样式 */
+        .button {
+            background-color: #ff6f61;
+            color: white;
+            font-size: 18px;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ff4081;
+        }
+
+        /* 动画效果 - 段落滑入 */
+        @keyframes slide-in {
+            0% { transform: translateY(20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 
+src="//music.163.com/outchain/player?type=2&id=491757212&auto=1&height=66"></iframe>
+
+    <h1>虚拟时间旅行：未来的探索</h1>
+    <p>探索未来科技，穿越时空，感受不一样的时光体验！</p>
+
+    <!-- 介绍 -->
+    <h2>未来的探索</h2>
+    <p>随着科技的飞速发展，人类在短短的几年内实现了前所未有的进步。从量子计算到人工智能，从太空探索到时间旅行，未来的世界充满了无限可能。</p>
+
+    <h3>时间旅行的未来</h3>
+    <p>想象一下，在不久的将来，我们可以通过 <em>时光机器</em> 穿越过去和未来，亲身经历历史的重大时刻。或许，你会成为一名时间旅行者，去目睹 <mark>历史巨变</mark> 和未来的辉煌。</p>
+
+    <img class="time-travel-image" src="time-machine.jpg" alt="时间机器">
+
+    <h3>未来科技</h3>
+    <ul>
+        <li><strong>量子计算</strong>：解决我们目前无法想象的计算问题。</li>
+        <li><strong>人工智能</strong>：人类智慧与机器智能的完美融合。</li>
+        <li><strong>太空旅行</strong>：探索浩瀚的宇宙，寻找新的星球。</li>
+        <li><strong>基因工程</strong>：改变我们的生物结构，抵抗疾病。</li>
+    </ul>
+
+    <h3>时间旅行的重要性</h3>
+    <ol>
+        <li><abbr title="历史的真相">了解过去</abbr>：亲身体验历史的重要时刻。</li>
+        <li><abbr title="改变未来">预见未来</abbr>：提前感知科技的变革和社会的发展方向。</li>
+        <li><abbr title="丰富个人经验">增进个人体验</abbr>：通过不同时间点的经历，提高自我认知。</li>
+    </ol>
+
+    <!-- 按钮 -->
+    <a href="more-info.html" class="button">了解更多</a>
+
+</body>
+</html>
