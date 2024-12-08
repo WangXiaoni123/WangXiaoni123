@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>虚拟时间旅行：未来的探索</title>
+    <link rel="shortcut icon" href="time-travel-icon.ico" />
+    <style>
+        /* 页面基础样式 */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('space-background.jpg'); /* 设置背景图片 */
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 40px;
+            background-attachment: fixed;
+            background-position: center;
+            animation: fade-in-background 3s ease-out; /* 背景渐变效果 */
+        }
+
+        /* 标题渐变动画 */
+        @keyframes gradient-text {
+            0% { color: #00bcd4; }
+            50% { color: #ff4081; }
+            100% { color: #00bcd4; }
+        }
+
+        /* 背景渐变动画 */
+        @keyframes fade-in-background {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* 主标题样式 */
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            animation: gradient-text 3s infinite; /* 渐变动画 */
+        }
+
+        /* 副标题样式 */
+        h2, h3 {
+            color: #4caf50;
+            animation: fade-in 2s ease-in-out;
+        }
+
+        /* 段落样式 */
+        p {
+            font-size: 22px;
+            color: #ffffff;
+            line-height: 1.8;
+            animation: slide-in 2s ease-out;
+        }
+
+        /* 飞行器图片动画效果 */
+        @keyframes zoom-in {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+
+        .time-machine-img {
+            width: 60%;
+            height: auto;
+            margin-top: 30px;
+            border-radius: 10px;
+            animation: zoom-in 3s ease-in-out infinite; /* 图片放大动画 */
+        }
+
+        /* 按钮样式 */
+        .btn {
+            background-color: #4caf50;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        /* 点击“了解更多”时显示的详细内容 */
+        .hidden-content {
+            display: none;
+            margin-top: 30px;
+            text-align: left;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hidden-content.show {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=491757212&auto=1&height=66"></iframe>
+    <!-- 主标题 -->
+    <h1>虚拟时间旅行：未来的探索</h1>
+
+    <!-- 时空旅行介绍 -->
+    <h2>想知道未来如何进行时空旅行？</h2>
+    <p>时空旅行一直以来是科学幻想的核心主题。未来的时空旅行不仅仅是科幻小说中的奇思妙想，它即将成为可能。在未来，我们将有机会穿越时间，探索宇宙的奥秘，甚至回到过去或进入遥远的未来。</p>
+
+    <p>时空旅行的实现依赖于先进的飞行器技术，今天，我们为你介绍一款开创性技术飞行器——Space-Wang XN，它将成为你探索未来世界的钥匙！</p>
+
+    <!-- Space-Wang XN 飞行器展示 -->
+    <h3>Space-Wang XN牌飞行器，一场飞行器的革命！</h3>
+    <p>Space-Wang XN 是一款全新的飞行器，它结合了时空旅行的革命性技术和先进的动力系统。这款飞行器能够穿越时间与空间，让你体验从未有过的奇妙之旅！</p>
+
+    <img src="time-machine.jpg" alt="Space-Wang XN飞行器" class="time-machine-img" />
+
+    <p>它的设计突破了传统飞行器的界限，使用了超高速的推进力系统和量子传输技术，支持在几秒钟内跨越数千光年的距离，带你到达未来的世界，甚至是遥远的星系！</p>
+
+    <!-- 了解更多按钮 -->
+    <button class="btn" onclick="toggleContent()">了解更多</button>
+
+    <!-- 详细内容部分 -->
+    <div class="hidden-content" id="moreInfo">
+        <h3>Space-Wang XN 飞行器的详细介绍</h3>
+        <p>Space-Wang XN不仅是时空旅行的工具，它还具备了超强的智能系统，可以根据旅客的需求定制时空旅行路径。飞行器内配备先进的AI助手，将为你提供全程导航和实时信息。</p>
+
+        <p>更重要的是，Space-Wang XN配备了最新的反重力引擎，使得飞行器在穿越空间和时间时，几乎不会受到任何阻力。无论你是想回到恐龙时代，还是进入未来的火星殖民地，Space-Wang XN都能带你实现！</p>
+
+        <p>不止如此，Space-Wang XN还具备超安全的防护系统，能够抵御时空波动带来的任何干扰，确保你的旅行安全无忧。</p>
+    </div>
+
+    <script>
+        // 切换显示/隐藏详细内容
+        function toggleContent() {
+            const content = document.getElementById("moreInfo");
+            content.classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>
