@@ -17,7 +17,6 @@
             background-attachment: fixed;
             background-position: center;
             animation: fade-in-background 3s ease-out; /* 背景渐变效果 */
-            overflow-x: hidden; /* 防止横向滚动 */
         }
 
         /* 标题渐变动画 */
@@ -38,17 +37,12 @@
             font-size: 60px;
             font-weight: bold;
             animation: gradient-text 3s infinite; /* 渐变动画 */
-            transition: transform 0.3s ease-in-out;
-        }
-        h1:hover {
-            transform: scale(1.1); /* 鼠标悬停时放大 */
         }
 
         /* 副标题和段落动画 */
         h2, h3 {
             color: #4caf50;
-            animation: fade-in 2s ease-in-out;
-            transition: color 0.3s ease;
+            animation: fade-in 2s ease-in-out; /* 渐变动画 */
         }
 
         p {
@@ -56,10 +50,6 @@
             color: #ffffff;
             line-height: 1.8;
             animation: slide-in 2s ease-out;
-            transition: transform 0.3s ease-in-out;
-        }
-        p:hover {
-            transform: scale(1.05); /* 鼠标悬停时放大 */
         }
 
         /* 图片样式 */
@@ -68,117 +58,76 @@
             height: auto;
             margin-top: 30px;
             border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
-        img.time-travel-image:hover {
-            transform: scale(1.1); /* 图片悬停放大 */
+            animation: fade-in 2s ease-out;
         }
 
-        /* 自定义滚动条样式 */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-thumb {
-            background-color: #00bcd4;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-track {
-            background-color: #333;
+        /* 各板块间隔 */
+        .section {
+            margin-bottom: 30px; /* 每个板块底部的间隔 */
         }
 
-        /* 模态框样式 */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgb(0,0,0); /* 半透明黑色背景 */
-            background-color: rgba(0, 0, 0, 0.4);
-            padding-top: 60px;
-        }
-
-        .modal-content {
-            background-color: #fefefe;
-            margin: 5% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            text-align: center;
-        }
-
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        /* 音乐播放器容器 */
-        iframe {
+        /* “了解更多”按钮样式 */
+        .more-info-btn {
+            background-color: #ff4081;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
             border: none;
-            width: 100%;
-            max-width: 330px;
-            height: 86px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
         }
 
+        .more-info-btn:hover {
+            background-color: #e040fb;
+        }
+
+        /* 隐藏的更多内容 */
+        .more-info-content {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #ddd;
+        }
     </style>
-</head>
-<body>
-    <!-- 页面内容 -->
-    <h1>虚拟时间旅行：未来的探索</h1>
-    <h2>踏上时光隧道，探索未知的未来世界！</h2>
-    <p>欢迎来到一个充满神秘和科技的世界，在这里你可以和我们一起进行虚拟的时间旅行。</p>
-
-    <!-- 时间旅行相关图片 -->
-    <img class="time-travel-image" src="time-travel-image.jpg" alt="时间旅行图片" />
-
-    <!-- 音乐播放器：背景音乐 -->
-    <iframe src="https://music.163.com/outchain/player?type=2&id=491757212&auto=1&height=66" allow="autoplay"></iframe>
-
-    <!-- 点击触发模态框 -->
-    <button id="myBtn">点击查看未来科技!</button>
-
-    <!-- 模态框 -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h3>未来科技展示</h3>
-            <p>这里展示了一些基于未来科技的虚拟装置，可以实现时间旅行、空间穿越等功能！</p>
-        </div>
-    </div>
-
     <script>
-        // 获取模态框元素
-        var modal = document.getElementById("myModal");
-        var btn = document.getElementById("myBtn");
-        var span = document.getElementsByClassName("close")[0];
-
-        // 点击按钮时打开模态框
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-
-        // 点击关闭按钮时关闭模态框
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // 点击模态框外部区域时关闭模态框
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
+        // JavaScript 控制显示更多内容
+        function toggleMoreInfo(id) {
+            var moreInfo = document.getElementById(id);
+            if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
             }
         }
     </script>
+</head>
+<body>
+    <div class="section">
+        <h1>虚拟时间旅行：未来的探索</h1>
+        <p>欢迎来到时间旅行的世界！在这里，我们将穿越时空，探索未来的奇妙景象。</p>
+    </div>
+
+    <div class="section">
+        <h2>我们的目标</h2>
+        <p>通过虚拟时间旅行，我们希望带你穿越未来，体验不同的时代与科技进步。</p>
+        <button class="more-info-btn" onclick="toggleMoreInfo('goal-more-info')">了解更多</button>
+        <div class="more-info-content" id="goal-more-info">
+            <p>我们的目标不仅仅是让你看到未来的世界，更是通过虚拟现实和增强现实技术，让你亲身体验未来的生活。</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>时空机器</h3>
+        <p>想象一下，坐上时空机器，进入未来世界！让我们带你体验未来的科技。</p>
+        <button class="more-info-btn" onclick="toggleMoreInfo('machine-more-info')">了解更多</button>
+        <div class="more-info-content" id="machine-more-info">
+            <p>时空机器采用最先进的科技，能够让我们瞬间穿越时空，实现前所未有的冒险与探索。</p>
+        </div>
+    </div>
+
+    <!-- 这里可以继续添加更多板块 -->
+
 </body>
 </html>
