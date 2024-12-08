@@ -20,12 +20,11 @@
             font-size: 18px;
             color: #555;
         }
-        video {
+        iframe {
             width: 80%;
+            height: 450px;
             margin-top: 20px;
-            border: 2px solid #ccc;
-            border-radius: 8px;
-            background-color: #000;
+            border: none;
         }
     </style>
 </head>
@@ -33,10 +32,7 @@
     <h1>《刻舟求剑》成语故事视频</h1>
     <p>导演：王霄楠</p>
 
-    <!-- 视频播放 -->
-    <video controls>
-        <source src="video/my-video.mp4" type="video/mp4">
-        您的浏览器不支持播放该视频。
-    </video>
+    <!-- 嵌入 Bilibili 视频 -->
+    <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113618276326331&bvid=BV12jqxYmEEr&cid=27246986029&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 </body>
 </html>
